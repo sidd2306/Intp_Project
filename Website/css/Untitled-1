@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EAGLE XI Sports Club</title>
+	<link rel="stylesheet" type="text/css" href="homepagestyle.css">
+	<link rel="icon" href="eaglelogo.png" type="image/icon type">
+	
+ 
+</head>
+<body>
+	<img src="eaglelogo.png" class="imglog">
+	<div class="header">
+		<h1>EAGLE's XI </h1>
+	</div>
+	<div class="addr">
+		402 - Swarna Jayanti Sadan Deluxe, Dr. B.D. Marg, New Delhi 110001
+	</div>
+	<div class="tabs" >
+		<button id="b1">Home</button>
+		<div class="dropdown">
+	  		<button class="dropbtn" >Profile</button>
+	 		<div class="dropdown-content">
+	    		<a href="#">Club Profile</a>
+				<a href="#">Player Profile</a>
+	 		 </div>
+		</div>
+		<div class="dropdown2">
+	  		<button class="dropbtn2">Gallery</button>
+	 		<div class="dropdown-content2">
+	    		<a href="#">Photo Gallery</a>
+				<a href="#">Video Gallery</a>
+	 		 </div>
+		</div>
+		<div class="dropdown3">
+	  		<button class="dropbtn3">Live</button>
+	 		<div class="dropdown-content3">
+	    		<a href="#">Points Table</a>
+				<a href="#">Match Fixtures</a>
+	 		 </div>
+		</div>
+		<div class="dropdown4">
+	  		<button class="dropbtn4">Membership</button>
+	 		<div class="dropdown-content4">
+	    		<a href="#">Membership Form</a>
+	 		 </div>
+		</div>
+		<button id="b2">Contacts</button>
+	</div><br>
+	<div class="slider-container">
+		<span id="slider-image1"></span>
+		<span id="slider-image2"></span>
+		<span id="slider-image3"></span>
+		<div class="image-container">
+			<img src="img1.jpg" class="slider-image">
+			<img src="img2.jpeg"class="slider-image">
+			<img src="img3.jpg" class="slider-image">
+		</div>		
+		<div class="button-container">
+			<a href="#slider-image1" class="slider-button"></a>
+			<a href="#slider-image2" class="slider-button"></a>
+			<a href="#slider-image3" class="slider-button"></a>
+		</div>
+	</div><br>
+	<div class="container3" >
+		<p><marquee width="500px"><b>Eagle's Achievements</b><hr width="500px"></marquee></p>
+		<div class="item-grid">
+			<div class="item">
+				<div class="item-image">
+					<img src="1stwin.jpg">
+				</div>
+				<div class="item-text">
+					<div class="item-text-wrapper">
+						<h2 class="item-text-title">HEADING</h2>
+					</div>
+				</div>
+			</div>
+	
+			<div class="item">
+				<div class="item-image">
+					<img src="2ndwin.jpg">
+				</div>
+				<div class="item-text">
+					<div class="item-text-wrapper">
+						<h2 class="item-text-title">HEADING</h2>
+					</div>
+				</div>
+			</div>		
+			<div class="item">
+				<div class="item-image">
+					<img src="3rdwin.jpg">
+				</div>
+				<div class="item-text">
+					<div class="item-text-wrapper">
+						<h2 class="item-text-title">HEADING</h2>
+					</div>
+				</div>
+			</div>			
+		</div>	
+	</div>	
+ 
+ 
+ 
+</body>
+<footer>
+	<dir class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-links">
+					<h3>INFORMATION</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Profile</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Gallery</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Live</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Membership</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Contacts</a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="col-md-3">
+				<div class="footer-links">
+					<h3>OUR JERSEY</h3>
+					<img src="jersey.png">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-links">
+					<h3>TEAM SQUAD</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><a href="#">Present Football team</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Under 18 Football Team</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Under 19 Football Team</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">2019 Winning Football Team</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-links">
+					<h3>CONTACT US</h3>
+					<ul>
+						<li><i class="fa fa-angle-right"></i><a href="#">402 - Swarna Jayanti Sadan Deluxe, Dr. B.D. Marg, New Delhi 110001</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">00-91-33-3200 0785 / 3299 2825</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">worldxi@rediffmail.com</a></li>
+					</ul><br><br>
+					<h3>FOLLOW US</h3>
+					<div class="con"><img src="fb.png"><img src="insta.png">
+					<img src="twitter.png"><img src="yt.png"></div>
+				</div>
+			</div>
+		</div>
+	</dir>
+</footer>
+</html>
+.slider-container{
+	width: 1000px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.image-container{
+	width:3000px;
+	height: 500px;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition:left 2s;
+	-moz-transition:left 2s;
+}
+.slider-image{
+	float:left;
+	margin: 0px;
+	padding:0px;
+}
+.button-container{
+	top: -20px;
+	position: relative;
+}
+.slider-button{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	background-color: #f4f4f4;
+	border-radius: 7px;
+}
+#slider-image1:target ~ .image-container{
+	left: 0px;
+}
+#slider-image2:target ~ .image-container{
+	left: -1000px;
+}
+#slider-image3:target ~ .image-container{
+	left: -2000px;
+}
+.imglog{
+	position: absolute;
+	padding:10px;
+}
+.container3{
+	width:100%;
+	margin:0px;
+	background-color: #7a2ab5; 
+	color:white;
+	font-family: courier;
+	font-size:18px;
+	border-radius: 5px;
+	padding: 7px;
+	height:425px;
+	
+}
+.container3{
+	animation: change 10s infinite;
+}
+@keyframes change{
+	0%{background-color: #bb5eff}
+	10%{background-color:#8a36c7}
+	25%{background-color:#7a2ab5}
+	40%{background-color:#4d1973}
+	55%{background-color:#220636}
+	70%{background-color:#4d1973}
+	80%{background-color:#7a2ab5}
+	90%{background-color:#8a36c7}
+	100%{background-color: #bb5eff}
+}
+.container3 p{
+	padding-top: 7px;
+	font-family: courier;
+	text-shadow:2px;
+	text-align: center;
+	text-decoration: underline;
+	font-size:40px;
+	font: bold;
+}
+ 
+.item-grid{
+	max-width: 1200px;
+	margin: 20px auto;
+	position: relative;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3)
+	overflow:hidden;
+}
+.item{
+	position: relative;
+	float: left;
+	width: 33.33333%
+	overflow:hidden;
+	box-sizing: border-box;
+}
+.item:after{
+	content: '';
+	display: block;
+	background-color: inherit;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	transform: scale(2) translateX(-75%) translateY(-75%) translateZ(0) rotate(-28deg);
+	transition: transform 3s cubic-bezier(0.23,1,0.32,1);
+}
+.item:hover:after{
+	transform: scale(2) translateX(0%) translateY(0%) translateZ(0) rotate(-28deg);
+}
+ 
+ 
+ 
+.container {
+	font-family: courier;
+}
+ 
+li{
+	list-style-type: none;
+	padding: 10px 0px;
+}
+.container h3{
+	color: #fff;
+	padding:0px 8px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: :uppercase;
+	line-height: 1.4;
+}
+.container a{
+	color:#a8a8a8;
+	font-size: 14px;
+	text-decoration: none;
+}
+.container a:hover{
+	text-decoration: none;
+	color:#fff;
+}

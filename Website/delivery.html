@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
 </head>
-<body>
+<body background="css/pic3.jpg">
    <div class="container">
       <header class="header">
           <a class="link-title" href="index.html">Cooking for youngsters</a>
@@ -21,7 +21,7 @@
               <li><a href="basic.html">Basic Cooking Videos</a></li>
               <li><a href="recipe.html">Recipe Magazine</a></li>
               <li><a href="tips.html">Cooking Tips</a></li>
-              <li><a class="active" href="takedel.html">Tiffin Delivery</a></li>    
+              <li><a class="selected" href="takedel.html">Tiffin Delivery</a></li>    
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About Us</a></li>
         </ul>
@@ -31,12 +31,12 @@
       <article class="maind">
       <div class="login-page">
       <div class="form">
-              <form class="register-form">
-                  <input type="text" placeholder=" Enter your first name"/>
-                  <input type="text" placeholder=" Enter your last name"/>
-                  <input type="email" placeholder="email id">
-                  <input type="number" placeholder="contact number">
-                  <input type="password" placeholder="password">
+              <form name="myForm" action="/action_page.php" class="register-form" onsubmit="return validateForm()" method="post">
+                  <input type="text" id="fname" placeholder=" Enter your first name"/>
+                  <input type="text" id="lname" placeholder=" Enter your last name"/>
+                  <input type="email" id="id" placeholder="email id">
+                  <input type="number" id="mob_no" placeholder="contact number">
+                  <input type="password" id="pwd" placeholder="password">
                   <button>Create</button>
                   <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
               </form>

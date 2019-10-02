@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
 </head>
-<body id="contact">
+<body id="contact" background="css/pic3.jpg">
    <div class="container">
       <header class="header">
           
@@ -18,12 +18,12 @@
           </a>
 	  </div>
           <ul>
-              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="basic.html">Basic Cooking Videos</a></li>
               <li><a href="recipe.html">Recipe Magazine</a></li>
               <li><a href="tips.html">Cooking Tips</a></li>
               <li><a href="delivery.html">Tiffin Delivery</a></li>    
-              <li><a class="active" href="contact.html">Contact</a></li>
+              <li><a class="selected" href="contact.html">Contact</a></li>
               <li><a href="about.html">About Us</a></li>
         </ul>
       <aside>
@@ -54,7 +54,25 @@
                     <p>
                         <input type="submit" name="submit" value="Send Message">
                     </p>
-                    
+                    </div>
+	<h3>Siddhesh Shivgan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Safal Dawankar</h3>	
+	<h3>9004197520 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8850831538</h3>
+	<h4>siddheshshivgan2306@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; safaldawankar@gmail.com</h4><br><br>
+    <h2>Locate Us at:</h2>    
+	
+	
+	
+	<div id="googleMap" style="width:1000px;height:400px;border:2px solid black;"></div>
+
+<script>
+function myMap() {
+var loc = {lat: 19.021571, lng: 72.870769};
+var map = new google.maps.Map(document.getElementById('googleMap'), {zoom: 20, center: loc});
+var marker = new google.maps.Marker({position: loc, map: map});
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqr57JyzOqK48YIZIx4zRUF1Q398BcqeM&callback=myMap"></script>
                     
                     
                     
