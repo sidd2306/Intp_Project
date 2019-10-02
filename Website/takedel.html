@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body id="finaldelivery">
+   <div class="container">
+      <header class="header"> 
+          <a class="link-title" href="">Cooking for youngsters</a>
+      </header> 
+      <div class="logo">
+          <a href="index.html">
+              <img src="css/logo1.png" width="180" height=150>
+          </a>
+	  </div>
+      <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="basic.html">Basic Cooking Videos</a></li>
+              <li><a href="recipe.html">Recipe Magazine</a></li>
+              <li><a class="active" href="tips.html">Cooking Tips</a></li>
+              <li><a href="delivery.html">Tiffin Delivery</a></li>    
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About Us</a></li>
+        </ul>
+      <!--<aside>
+         <h1>Side bar</h1>
+                  
+      </aside>-->
+      <article class="main">
+            <h1 class="page-heading">Place your order by submitting this form</h1>
+            <div id="formd">
+    <form action="abcd.php" name="myForm" onSubmit="return(validate())" >
+                   <p><h2>Enter your personal details</h2></p>
+        
+                   <p><label for="name">First Name:</label>
+                    <input type="text" name="fname" placeholder="Your first name"></p>
+                    
+                    <p><label for="name">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Your last name"></p>
+                    
+                     <p><label for="number">Contact Number:</label>
+                    <input type="text" name="con-number"></p>
+                    
+                    <p><label for="name">Gender:</label>
+                    <input type="radio" name="gender" value="Male" >Male &nbsp;
+                    <input type="radio" name="gender" value="Female" >Female&nbsp;
+                    <input type="radio" name="gender" value="Others">Others </p>
+                   
+                    <p><label for="date">Date of Birth:</label>
+                    <input type="date" name="bday"></p>
+                    
+                    <p><label for="name">I live in:</label>
+                    <select name="area">
+                    <option value="Mumbai Suburb"> Mumbai Suburb</option>
+                    <option selected value="Western Mumbai">Western Mumbai</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Navi Mumbai">Navi Mumbai</option>
+                        </select></p>
+                        
+                    <p>
+                    <label for="name"></label>
+                    <textarea id="address" name="address"  cols="30" rows="8" placeholder="Enter your address"></textarea></p>
+                    
+                    <p><label for="number">Pin Code:</label>
+                    <input type="text" name="pincode"></p>
+                    
+              <p><h2> Choose your tiffin plan</h2></p>
+                    <p><label for="checkbox">Veg Tiffin Box</label>
+                    <input type="checkbox" name="vlun" value="Veg Tiffin Box">
+                    <label for="name">Quantity:</label>
+                    <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                        </select></p>
+                        
+                    <p><label for="checkbox">NonVeg Tiffin Box</label>
+                    <input type="checkbox" name="nvlun" value="NonVeg Tiffin Box">
+                    <label for="name">Quantity:</label>
+                    <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                        </select></p>
+                        
+                    <p><label for="date">From which date do you<br> want to start your plan?:</label>
+                    <input type="date" name="startdate"></p>
+                       
+                    <p><label for="number">Enter the number of months<br> fow which you want the plan:</label>
+                    <input type="text" name="months"></p>
+                        
+                    
+        <!-- First name: <br> <input type="text" name="First_Name"><br><br>
+        Last name: <br> <input type="text" name="Last_Name"><br><br>
+        Gender: <br> <input type="radio" name="gender" value="Male" >Male
+        <input type="radio" name="gender" value="Female" >Female
+        <input type="radio" name="gender" value="Others">Others </p> 
+        Birthdate: <input type="date" name="bday"><br><br>
+        I live in 
+        <select name="area">
+            <option value="Mumbai Suburb"> Mumbai Suburb</option>
+            <option selected value="Western Mumbai">Western Mumbai</option>
+            <option value="Thane">Thane</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+        </select><br><br>
+         Type: <br> <input type="radio" name="type" value="Veg" >Veg<br>
+        <input type="radio" name="type" value="Nonveg" >Non-Veg<br><br>
+        Cuisine: <br> <input type="radio" name="cuisine" value="Indian" >Indian<br>
+        <input type="radio" name="cuisine" value="Chinese" >Chinese<br>
+        <input type="radio" name="cuisine" value="Italian" >Italian<br><br>
+        Enter the number of months for which you want the lunch: <br> <input type="number" name="months"><br><br>
+        Quantity: <br> <input type="number" name="quantity"><br><br>-->
+        <input type="submit" name="submit" value="Submit my data">
+        <input type="reset" name="reset" value="Reset my data">
+            

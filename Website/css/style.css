@@ -1,0 +1,420 @@
+/*************CSS common for all the pages **************/
+body{
+    /*background:white*/;
+    margin:0;
+}
+
+.link-title{
+    text-align: center;
+    text-decoration:none;
+    font-size:78px;
+    color: #444444;
+    padding-left: 30px
+    
+}
+
+.logo{
+  position: absolute;
+  top: 1px;
+  left: 190px;
+}
+
+/*.hlog{
+    margin: 0 0 0 0px auto;
+    padding: 5px 10px 5px 10px;
+}*/
+
+.container{
+    width: 1390px;
+    height: 100%;
+    margin:0 auto;
+    /*background:white*/ ;
+}
+
+.header{
+    background-image: url(pic4s.jpg);
+    text-align: center; 
+    padding: 35px 5px 20px 40px;
+   
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a:visited {
+    border-left-width: 0px
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+h1{
+    margin: 0px;
+    color:#869843;
+    font-size: 24px;
+    font-family: "Arial Narrow", "Myriad Pro";
+    font-weight: normal;
+}
+
+
+h2{
+    color:#3b7687;
+    font-size: 15px;
+    margin: 20px 0 5px 0;
+}
+
+.main{
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0;
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+
+.main a:hover{
+    color: #444444;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+      bottom: 0;
+  width: 100%;
+  text-align: center;
+    padding: 6px 40px 6px 40px;
+    background:darkcyan;;
+    font-family:"Lucida Sans Unicode";
+    color:white;
+    font-weight: 300;
+    font-size:11px;
+    text-decoration: right;
+}
+
+footer a{
+    text-decoration: none;
+    color:#262626;
+}
+
+.separator{
+    color:#ffffff;
+    font-size: 11px;
+}
+
+
+/*************CSS separately for index page i **************/
+.containeri{
+    width: 1490px;
+    height: 960px;
+    margin:0 auto;
+    background-image:url(pic4.jpg) ;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+.mySlides {display:none}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-center{text-align:center!important}
+.w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+
+#home-image img{
+    width: 27%;
+    height: 32%;
+    position: absolute; visibility: visible; left: 580px; top: 400px;
+     display: block;
+    margin-left: auto;
+  margin-right: auto;
+    
+}
+
+/************** CSS separately for About Page ***************/
+.maino{
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0;
+    color: black;
+    font-family:"Calibiri";
+    font-weight:normal;
+    font-size: 17px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+.slider {
+    width: 450px;
+    height:300px;
+    background: url(pizzas.jpg);
+    background: cover;
+    margin: 0 300px 0 0 auto;
+    animation: 12s slider infinite;
+}
+@keyframes slider{
+    25%{
+       background: url(chaisam.jpg); 
+    }
+    50%{
+       background: url(puribh.jpg);
+    }
+    65%{
+       background: url(magnoo.jpg);
+    }
+    /*85%{
+       background: url(pizzas.jpg);
+    }*/
+}
+
+#about-page #home-image img{
+    width: 40%;
+    float: left;
+}
+
+#about-page #profile-info{
+    height: 100%;
+    position: absolute;
+    visibility:visible;
+    top:220px;
+    left:250px;
+    width: 650px;
+    margin: 0 0 0 500px;
+}
+
+
+
+/****************CSS separately for DELIVERY FORM***********/
+
+.containerd{
+    width: 1290px;
+    height: 650px;
+    margin:0 auto;
+    background: #FFF ;
+}
+.header{
+    background-image: url(pic4s.jpg);
+    text-align: center; 
+    padding: 35px 0 20px 40px;
+   
+}
+
+.menu{
+    
+    background-color: #333;
+    background-image:ur(pic4s.jpg); 
+    /*background-color: #ffffff*/
+    /*background: #3b7687;
+    background-blend-mode: soft-light;*/
+    padding: 6px 0 6px 110px;
+    
+    
+}
+
+.menu a {
+     font-weight: bold;
+     color:white;
+    text-decoration:none;
+    font-size: 16px;
+    font-family: "Arial Narrow", "Myriad pro";
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    
+}
+
+.menu a:hover {
+    color:white; 
+}
+
+.maind{
+    margin: 0 0 20px 20px;
+    padding: 5px 10px 5px 0;
+    background-image: url(cofeeee.jpg);
+    /*height: 477px;*/
+    background-position: center;
+    background-size: cover;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form{
+    position:relative;
+    z-index:1;
+    background: black;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width=100%;
+    border:0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:14px;
+    
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline:0;
+    background: red;
+    width: 100%;
+    border: 0;
+    padding:15px;
+    color:#ffffff;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.form .register-form{
+    display: none;
+}
+.message{
+    color:white;
+}
+
+.gotores{
+    color:yellow;
+}
+
+
+
+
+
+
+/****************CSS separately for Contact form*****************/
+
+
+#contact #formc{
+background: white; 
+width:500px;
+border:2px solid black;
+padding:10px 10px 10px 10px;
+margin:0 auto;
+     
+}
+
+#contact #formc input{
+   
+width:100%;
+border-radius:5px ;
+height:20px;
+background: #d6d6d6;
+     
+}
+
+#contact #formc #messagec{
+    
+    width: 100%;
+    border-radius: 5px;
+    background: #d6d6d6;
+}
+
+#contact #formc #submit{
+    background:rgb(59, 118, 1)
+}
+
+
+
+/************CSS separately for Cooking tips****************/
+.tipstart{
+    text-align: center;
+    font-size: 30px;
+    color: crimson;
+}
+
+ul{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.tiptitle{
+    font-size: 22px;
+    color:darkmagenta;
+}
+
+
+
+
+
+
+/*********************CSS separately for takedel Final delivery form********************/
+#finaldelivery #formd{
+background: deepskyblue ; 
+width:900px;
+border:2px solid black;
+padding:10px 10px 10px 10px;
+margin:0 auto;
+    margin-left: 200px;
+     
+}
+
+#finaldelivery #formd input{
+   
+width:50%;
+border-radius:5px ;
+height:20px;
+background: white;
+     
+}
+
+#finaldelivery #formd input[type=radio]{
+/*border-radius:5px ;
+height:20px;*/
+background: white;
+     
+}
+
+
+#finaldelivery #formd #address{
+    
+    width: 60%;
+    border-radius: 5px;
+    background:white;
+}
+
+#finaldelivery #formd #submit,#reset{
+    background:darkorange;
+}
+ 
