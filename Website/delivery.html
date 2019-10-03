@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tiffin Delivery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/scripts.js"></script>
 </head>
 <body background="css/pic3.jpg">
@@ -16,35 +17,45 @@
               <img src="css/logo1.png" width="180" height=150>
           </a>
 	  </div>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="basic.html">Basic Cooking Videos</a></li>
-              <li><a href="recipe.html">Recipe Magazine</a></li>
-              <li><a href="tips.html">Cooking Tips</a></li>
-              <li><a class="selected" href="takedel.html">Tiffin Delivery</a></li>    
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About Us</a></li>
-        </ul>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="basic.html">Basic Cooking Videos</a>
+              <a href="recipe.html">Recipe Magazine</a>
+              <a href="tips.html">Cooking Tips</a>
+              <a class="selected" href="delivery.html">Tiffin Delivery</a>    
+              <a href="contact.html">Contact</a>
+              <a style="float:right" href="about.html">About Us</a>
+        </nav>
+       
+       <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+       
       <!--<aside>
           <h1>Side bar</h1>
       </aside>-->
       <article class="maind">
       <div class="login-page">
       <div class="form">
-              <form name="myForm" action="/action_page.php" class="register-form" onsubmit="return validateForm()" method="post">
-                  <input type="text" id="fname" placeholder=" Enter your first name"/>
-                  <input type="text" id="lname" placeholder=" Enter your last name"/>
-                  <input type="email" id="id" placeholder="email id">
-                  <input type="number" id="mob_no" placeholder="contact number">
-                  <input type="password" id="pwd" placeholder="password">
+              <form name="myForm1" action="/action_page.php" target="_blank" class="register-form" autocomplete="on">
+                  <input type="text" placeholder=" Enter your first name" required>
+                  <input type="text" placeholder=" Enter your last name" required>
+                  <input type="email" placeholder="email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <input type="number" placeholder="contact number" maxlength="10" required>
+                  <input type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+				  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                   <button>Create</button>
                   <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
               </form>
               
-              <form class="login-form">
-                  <input type="text" placeholder="email id"/>
-                  <input type="password" placeholder="password"/>
-                  <button>Login</button>
+              <form name="myForm2" class="login-form" onsubmit="return validateForm();">
+                  <input type="email" name="id" placeholder="email id">
+                  <input type="password" name="pwd" placeholder="password"/>
+                  <button type="submit">Login</button>
                   <p class="message"> Not Registered ? <a href="#" class="gotores">Register</a></p>
               </form>
           </div>

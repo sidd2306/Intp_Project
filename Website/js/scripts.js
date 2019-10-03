@@ -1,64 +1,42 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+showDivs(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentDiv(n) {
+  showDivs(slideIndex = n);
 }
 
-function showSlides(n) {
+function showDivs(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
 function validateForm()
 {
-if(email_validation())
+if(document.myForm2.id.value == "")               //for email
 {
-if(pwd_validation())
-{
-}
-}
-return false;
-}
-
-function email_validation()
-{
-var email = document.getElementById('id');    
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(email.value.match(mailformat))               //for email
-{
-        alert("You have entered an invalid email address!");
-        document.myForm.id.focus();
+        alert("Please enter an email address!");
+        document.myForm2.id.focus();
         return false;
 }
-return true;
-}
-function pwd_validation()
+if(document.myForm2.pwd.value == "")// for password validation 
 {
-var str = document.getElementById('pwd').value; 
-if(!str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g) && str.length >= 8) // for password validation 
-{
-        alert("Enter valid password with 1 upper case, 1 lower case, 1 digit, 1 special & minimum 8 char!"); 
-        document.myForm.pwd.focus(); 
+        alert("Please enter a password!"); 
+        document.myForm2.pwd.focus(); 
         return false;
-}
-return true;
+}  
 }
 
