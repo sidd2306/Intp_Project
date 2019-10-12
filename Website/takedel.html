@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,73 +7,66 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
+
 </head>
-<body id="finaldelivery">
+<body id="finaldelivery" background="css/pic3.jpg">
    <div class="container">
-      <header class="header"> 
+      <header class="header">
           <a class="link-title" href="">Cooking for youngsters</a>
       </header> 
-      <div class="logo">
-          <a href="index.html">
-              <img src="css/logo1.png" width="180" height=150>
-          </a>
-	  </div>
-      <nav>
-              <a href="index.html">Home</a>
-              <a href="basic.html">Basic Cooking Videos</a>
-              <a href="recipe.html">Recipe Magazine</a>
-              <a href="tips.html">Cooking Tips</a>
-              <a class="selected" href="delivery.html">Tiffin Delivery</a>    
-              <a href="contact.html">Contact</a>
-              <a style="float:right" href="about.html">About Us</a>
-        </nav>
+      
+      <nav class="menu">
+          
+          <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="about.html">About us</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="basic.html">Basic Cooking Videos</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="recipe.html">Recipe Magazine</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="tips.html">Cooking Tips</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="delivery.html">Tiffin delivery</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="contact.html">Contact</a> 
+      </nav>
       <!--<aside>
          <h1>Side bar</h1>
                   
       </aside>-->
       <article class="main">
             <h1 class="page-heading">Place your order by submitting this form</h1>
+            <div id="mealspic">
+             <img src="css/vegfood.jpg" height="300px" width="250px"><br>
+             <h2  class="typelunch">Veg Lunch - Price Rs.2200(per month)<br></h2>
+             <img src="css/nonveg.JPG" height="300px" width="250px"><br>
+             <h2 class="typelunch">Non Veg Lunch - Price Rs.2400(per month)</h2>
+         </div>
             <div id="formd">
-    <form action="abcd.php" name="myForm" onSubmit="return(validate())" >
-                   <p><h2>Enter your personal details</h2></p>
+    <form action="http://localhost/website/delivery.php" method="get">
+                   <h2>Enter your personal details</h2>
         
-                   <p><label for="name">First Name:</label>
-                    <input type="text" name="fname" placeholder="Your first name"></p>
-                    
-                    <p><label for="name">Last Name:</label>
-                    <input type="text" name="lname" placeholder="Your last name"></p>
-                    
-                     <p><label for="number">Contact Number:</label>
-                    <input type="text" name="con-number"></p>
-                    
-                    <p><label for="name">Gender:</label>
-                    <input type="radio" name="gender" value="Male" >Male &nbsp;
-                    <input type="radio" name="gender" value="Female" >Female&nbsp;
-                    <input type="radio" name="gender" value="Others">Others </p>
-                   
-                    <p><label for="date">Date of Birth:</label>
-                    <input type="date" name="bday"></p>
-                    
-                    <p><label for="name">I live in:</label>
+        Age: <br> <input type="text" name="age" placeholder="Your age"><br><br>
+        Gender: <br> <input type="radio" name="gender" value="Male" >Male<br>
+        <input type="radio" name="gender" value="Female" >Female<br>
+        <input type="radio" name="gender" value="Others">Others<br><br>
+        Birthdate: <input type="date" name="bday"><br><br>
+        I live in:
                     <select name="area">
-                    <option value="Mumbai Suburb"> Mumbai Suburb</option>
-                    <option selected value="Western Mumbai">Western Mumbai</option>
-                    <option value="Thane">Thane</option>
-                    <option value="Navi Mumbai">Navi Mumbai</option>
-                        </select></p>
-                        
-                    <p>
-                    <label for="name"></label>
-                    <textarea id="address" name="address"  cols="30" rows="8" placeholder="Enter your address"></textarea></p>
-                    
-                    <p><label for="number">Pin Code:</label>
-                    <input type="text" name="pincode"></p>
-                    
-              <p><h2> Choose your tiffin plan</h2></p>
-                    <p><label for="checkbox">Veg Tiffin Box</label>
-                    <input type="checkbox" name="vlun" value="Veg Tiffin Box">
+                    <option value="westernsuburb"> Western Suburb</option>
+                    <option selected value="southmum">South Mumbai</option>
+                    <option value="easternsuburb">Eastern Suburb</option>
+                        </select><br><br>
+        I am 
+        <select name="occupation">
+            <option value="schoolstud">School student</option>
+            <option selected value="collegestud">College student</option>
+            <option value="working">Working</option>
+            <option value="intern">Intern</option>
+        </select><br><br>
+        Name of your school/college/office/company: <br><input type="text" name="occloc"><br><br>
+        <textarea id="address" name="address"  cols="30" rows="8" placeholder="Enter your address"></textarea><br>
+        Pin Code:<br><input type="text" name="pincode"><br>
+        <h2> Choose your tiffin plan</h2>
+        <p><label for="name">Veg Tiffin Box</label>
                     <label for="name">Quantity:</label>
-                    <select name="quantity">
+                    <select name="vquantity" id="vqauntm">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -84,10 +79,10 @@
                     <option value="10">10</option>
                         </select></p>
                         
-                    <p><label for="checkbox">NonVeg Tiffin Box</label>
-                    <input type="checkbox" name="nvlun" value="NonVeg Tiffin Box">
+                    <p><label for="name">NonVeg Tiffin Box</label>
                     <label for="name">Quantity:</label>
-                    <select name="quantity">
+                    <select name="nvquantity" id="nvqauntm">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -98,16 +93,37 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                        </select></p>
+                        </select></p><br>
+          From which date do you want to start your plan?:  <br> 
+          <input type="date" name="startdate"><br><br>
+          Enter the number of months for which you want the plan:<br>  
+          <input type="text" name="months" id="noof">  <br> <br> 
+          <!--<input type="button" onclick="return calculate();" value="Calculate Your Total Amount" /><br>
+          <p>The Result is : <br>
+              <span id = "result"></span><br><br></p>-->
+      
+        <!--
+        <input type="button" onClick="alert('You are not so qualified !!')" value="Check my degree"><br><br>
+        
+                   
+                    
+                   
+                        
+                    
+                    
+                    
+                    
+              <p></p>
+                    
                         
                     <p><label for="date">From which date do you<br> want to start your plan?:</label>
-                    <input type="date" name="startdate"></p>
+                    
                        
                     <p><label for="number">Enter the number of months<br> fow which you want the plan:</label>
-                    <input type="text" name="months"></p>
+                    
                         
                     
-        <!-- First name: <br> <input type="text" name="First_Name"><br><br>
+         First name: <br> <input type="text" name="First_Name"><br><br>
         Last name: <br> <input type="text" name="Last_Name"><br><br>
         Gender: <br> <input type="radio" name="gender" value="Male" >Male
         <input type="radio" name="gender" value="Female" >Female
@@ -127,6 +143,12 @@
         <input type="radio" name="cuisine" value="Italian" >Italian<br><br>
         Enter the number of months for which you want the lunch: <br> <input type="number" name="months"><br><br>
         Quantity: <br> <input type="number" name="quantity"><br><br>-->
-        <input type="submit" name="submit" value="Submit my data">
+        <input type="submit" name="submit" value="Submit my data"><br><br>
         <input type="reset" name="reset" value="Reset my data">
+                </form>
+          </div>
+       </article>
+    </div>
+    </body>
+</html>
             

@@ -4,6 +4,74 @@
     <meta charset="UTF-8">
     <title>Tiffin Delivery</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body background="css/pic3.jpg">
+   <div class="containerd">
+      <header class="header">
+          
+          <a class="link-title" href="">Cooking for youngsters</a>
+      </header> 
+      
+      <nav class="menu">
+          
+          <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="about.html">About us</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="basic.html">Basic Cooking Videos</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="recipe.html">Recipe Magazine</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="tips.html">Cooking Tips</a>  &nbsp;   &nbsp;   &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="delivery.html">Tiffin delivery</a> &nbsp;    &nbsp;    &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+          <a href="contact.html">Contact</a> 
+      </nav>
+      <!--<aside>
+          <h1>Side bar</h1>
+      </aside>-->
+      <article class="maind">
+      <div class="login-page">
+      <div class="form">
+              <form class="register-form" action="http://localhost/website/registration.php" method="get">
+                  <input type="text" name="fname" placeholder=" Enter your first name"/>
+                  <input type="text" name="lname" placeholder=" Enter your last name"/>
+                  <input type="email" name="emaid" placeholder="Enter your email id">
+                  <input type="number" name="contactnum" placeholder="Enter contact number">
+                  <input type="password" name="pswd" placeholder="Your password">
+                  <button>Create</button>
+                  <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
+              </form>
+              
+              <form class="login-form" action="http://localhost/website/validation.php" method="get">
+                  <input type="email" name="emaid" placeholder="Enter your email id"/>
+                  <input type="password" name="pswd" placeholder="Your password"/>
+                  <button>Login</button>
+                  <p class="message"> Not Registered ? <a href="#" class="gotores">Register</a></p>
+              </form>
+          </div>
+      </div>
+      <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+      
+      <script>
+          $('.message a').click(function(){
+          $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
+          });
+          </script>
+    
+   
+  
+ 
+</article>
+      <footer>
+           &copy; 2019 &nbsp; Cooking for youngsters &nbsp; <span class="separator">|</span> Designed by The S
+      </footer>
+       
+   </div> 
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiffin Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/scripts.js"></script>
 </head>
@@ -35,13 +103,11 @@
           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
         </div>
        
-      <!--<aside>
-          <h1>Side bar</h1>
-      </aside>-->
+     
       <article class="maind">
       <div class="login-page">
       <div class="form">
-              <form name="myForm1" action="/action_page.php" target="_blank" class="register-form" autocomplete="on">
+              <form name="myForm1" action="http://localhost/website/registration.php" method="get" class="register-form" autocomplete="on">
                   <input type="text" placeholder=" Enter your first name" required>
                   <input type="text" placeholder=" Enter your last name" required>
                   <input type="email" placeholder="email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
@@ -52,7 +118,7 @@
                   <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
               </form>
               
-              <form name="myForm2" class="login-form" onsubmit="return validateForm();">
+              <form name="myForm2" class="login-form" onsubmit="return validateForm();" action="http://localhost/website/validation.php" target="_blank"  method="get">
                   <input type="email" name="id" placeholder="email id">
                   <input type="password" name="pwd" placeholder="password"/>
                   <button type="submit">Login</button>
@@ -79,4 +145,4 @@
        
    </div> 
 </body>
-</html>
+</html>-->

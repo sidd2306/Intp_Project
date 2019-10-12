@@ -1,42 +1,13 @@
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+function calculate() {
+    
+                    num1 = document.getElementById("vquantm").value;
+                    num2 = document.getElementById("nvquantm").value;
+                    /*num3 = document.getElementById("noof").value;
+                    val1 = num1 * 2200 * num3;
+                    val2 = num2 * 2400 * num3;
+                    result= val1 + val2;
+                    return "Total Result:" + result;*/
+                    return document.getElementById("result").innerHTML = num1 * num2;
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
 }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-function validateForm()
-{
-if(document.myForm2.id.value == "")               //for email
-{
-        alert("Please enter an email address!");
-        document.myForm2.id.focus();
-        return false;
-}
-if(document.myForm2.pwd.value == "")// for password validation 
-{
-        alert("Please enter a password!"); 
-        document.myForm2.pwd.focus(); 
-        return false;
-}  
-}
-
