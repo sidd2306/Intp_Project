@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiffin Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body background="css/pic3.jpg">
+   <div class="containerd">
+       <div class="logo">
+          <a href="index.html">
+              <img src="css/logo1.png" width="180" height=150>
+          </a>
+	  </div>
+      <header class="header">
+          
+          <a class="link-title" href="">Cooking for youngsters</a>
+      </header> 
+      
+      <nav>
+              <a href="index.html">Home</a>
+              <a href="basic.html">Basic Cooking Videos</a>
+              <a href="recipe.html">Recipe Magazine</a>
+              <a href="tips.html">Cooking Tips</a>
+              <a class="selected" href="delivery.html">Tiffin Delivery</a>    
+              <a href="contact.html">Contact</a>
+              <a style="float:right" href="about.html">About Us</a>
+        </nav>
+       <div class="icon-bar">
+          <a href="https://www.facebook.com/Cooking-For-Youngsters-116618899751670/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/GEtisbew" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://cookingforyoungsters1.blogspot.com/" class="google" target="_blank"><i class="fa fa-google"></i></a>
+          <a href="https://www.instagram.com/gnikooc53/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCETrPN1Nq5TYaR1CjOxL25A" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+     
+      <article class="maind">
+      <div class="login-page">
+      <div class="form">
+              <form class="register-form" action="http://localhost/website/registration.php" target="_blank" method="get">
+                  <input type="text" name="fname" placeholder=" Enter your first name"/>
+                  <input type="text" name="lname" placeholder=" Enter your last name"/>
+                  <input type="email" name="emaid" placeholder="Enter your email id">
+                  <input type="number" name="contactnum" placeholder="Enter contact number">
+                  <input type="password" name="pswd" placeholder="Your password">
+                  <button>Create</button>
+                  <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
+              </form>
+              
+              <form class="login-form" action="http://localhost/website/validation.php" method="get">
+                  <input type="email" name="emaid" placeholder="Enter your email id"/>
+                  <input type="password" name="pswd" placeholder="Your password"/>
+                  <button>Login</button>
+                  <p class="message"> Not Registered ? <a href="#" class="gotores">Register</a></p>
+              </form>
+          </div>
+      </div>
+      <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+      
+      <script>
+          $('.message a').click(function(){
+          $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
+          });
+          </script>
+    
+   
+  
+ 
+</article>
+      <footer>
+           &copy; 2019 &nbsp; Cooking for youngsters &nbsp; <span class="separator">|</span> Designed by The S
+      </footer>
+       
+   </div> 
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiffin Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body background="css/pic3.jpg">
+   <div class="container">
+      <header class="header">
+          <a class="link-title" href="index.html">Cooking for youngsters</a>
+      </header> 
+      <div class="logo">
+          <a href="index.html">
+              <img src="css/logo1.png" width="180" height=150>
+          </a>
+	  </div>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="basic.html">Basic Cooking Videos</a>
+              <a href="recipe.html">Recipe Magazine</a>
+              <a href="tips.html">Cooking Tips</a>
+              <a class="selected" href="delivery.html">Tiffin Delivery</a>    
+              <a href="contact.html">Contact</a>
+              <a style="float:right" href="about.html">About Us</a>
+        </nav>
+       
+       <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+       
+     
+      <article class="maind">
+      <div class="login-page">
+      <div class="form">
+              <form name="myForm1" action="http://localhost/website/registration.php" method="get" class="register-form" autocomplete="on">
+                  <input type="text" placeholder=" Enter your first name" required>
+                  <input type="text" placeholder=" Enter your last name" required>
+                  <input type="email" placeholder="email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <input type="number" placeholder="contact number" maxlength="10" required>
+                  <input type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+				  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                  <button>Create</button>
+                  <p class="message"> Already Registered ? <a href="#" class="gotores">Login </a></p>
+              </form>
+              
+              <form name="myForm2" class="login-form" onsubmit="return validateForm();" action="http://localhost/website/validation.php" target="_blank"  method="get">
+                  <input type="email" name="id" placeholder="email id">
+                  <input type="password" name="pwd" placeholder="password"/>
+                  <button type="submit">Login</button>
+                  <p class="message"> Not Registered ? <a href="#" class="gotores">Register</a></p>
+              </form>
+          </div>
+      </div>
+      <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+      
+      <script>
+          $('.message a').click(function(){
+          $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
+          });
+          </script>
+     
+    
+   
+  
+ 
+</article>
+      <footer>
+           &copy; 2019 &nbsp; Cooking for youngsters &nbsp; <span class="separator">|</span> Designed by The S
+      </footer>
+       
+   </div> 
+</body>
+</html>-->

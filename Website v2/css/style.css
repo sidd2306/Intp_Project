@@ -1,0 +1,585 @@
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+
+/*************CSS common for all the pages **************/
+body{
+    background:url(pic3.jpg);
+    margin:0;
+}
+
+.link-title{
+    text-align: center;
+    text-decoration:none;
+    font-size:78px;
+    color: #444444;
+    padding-left: 30px;
+}
+
+.logo{
+  position: absolute;
+  top: -5px;
+  left: 160px;
+}
+
+.page-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    color: crimson;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+
+.container{
+    width: 1366px;
+    height: 100%;
+    margin:0 auto;
+    /*background:white*/ ;
+}
+
+.header{
+    /*background-image: url(hbgcon.jpg);*/
+    text-align: center;
+    padding: 45px 0 20px 40px;
+    
+}
+
+nav {
+  align-self: center;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-family: fantasy;
+ 
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+.selected {
+  background-color: #4CAF50;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 65%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background-color:fuchsia;
+  color: white;
+}
+
+}
+aside{
+    float:left;
+    width:120px;
+    height:120px;
+    padding: 10px 0 0 40px;
+    
+}
+
+h1{
+    margin: 0px;
+    color:ghostwhite;
+    font-size: 30px;
+    font-family: "Arial Narrow", "Myriad Pro";
+    font-weight: normal;
+}
+
+
+h2{
+    color:#3b7687;
+    font-size: 15px;
+    margin: 20px 0 5px 0;
+}
+
+.main{
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0;
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+      bottom: 0;
+  width: 100%;
+  text-align: center;
+    padding: 6px 40px 6px 40px;
+    background:darkcyan;;
+    font-family:"Lucida Sans Unicode";
+    color:white;
+    font-weight: 300;
+    font-size:11px;
+    text-decoration: right;
+}
+
+footer a{
+    text-decoration: none;
+    color:#262626;
+}
+
+.separator{
+    color:#ffffff;
+    font-size: 11px;
+}
+
+
+/*************CSS separately for index page i **************/
+.logo{
+  position: absolute;
+  top: -5px;
+  left: 160px;
+}
+
+.headerind{
+    background-image: url(pic4s.jpg);
+    text-align: center;
+    padding: 45px 0 20px 40px;
+}
+.containeri{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background-image:url(pic4.jpg) ;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+.welc{
+    font-size: 55px;
+    font-family:"Comic Sans MS";
+    text-align: center;
+    position: absolute; 
+    visibility: visible;
+    left:350px;
+    color:darkorchid;
+    margin: 0 0 10px -70px;
+}
+
+#home-image img{
+    width: 27%;
+    height: 32%;
+    position: absolute; visibility: visible; 
+    left: 510px; top: 400px;
+     display: block;
+    margin-left: auto;
+  margin-right: auto;
+    
+}
+
+/************** CSS separately for About Page ***************/
+.maino{
+    margin: 0 0 0 100px;
+    padding: 35px 40px 0 0;
+    color: black;
+    font-family:"Calibiri";
+    font-weight:normal;
+    font-size: 17px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+.slider {
+    width: 450px;
+    height:300px;
+    background: url(pizzas.jpg);
+    background: cover;
+    margin: 0 300px 0 10px;
+    animation: 18s slider infinite;
+}
+@keyframes slider{
+    20%{
+       background: url(chaisam.jpg); 
+    }
+    35%{
+       background: url(puribh.jpg);
+    }
+    50%{
+       background: url(magnoo.jpg);
+    }
+    65%{
+       background: url(burger.jpg);
+    }
+    80%{
+       background: url(gajar.jpg);
+    }
+}
+
+#about-page #home-image img{
+    width: 40%;
+    float: left;
+}
+
+#about-page #profile-info{
+    height: 100%;
+    position: absolute;
+    visibility:visible;
+    top:220px;
+    left:150px;
+    width: 650px;
+    margin: 0 0 50px 500px;
+}
+
+
+
+/****************CSS separately for DELIVERY FORM***********/
+
+.containerd{
+    width: 1366px;
+    height: 100%;
+    margin:0 auto;
+    background: url(pic3.jpg) ;
+    
+}
+
+.maind{
+    
+    padding: 6px 250px 6px 30px;
+    background-image: url(cofeeee.jpg);
+    /*height: 477px;*/
+    background-position: center;
+    background-size: cover;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 5px;
+    text-emphasis:justify;
+}
+
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form{
+    position:relative;
+    z-index:1;
+    background: black;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width=100%;
+    border:0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:14px;
+    
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline:0;
+    background: red;
+    width: 100%;
+    border: 0;
+    padding:15px;
+    color:#ffffff;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.form .register-form{
+    display: none;
+}
+.message{
+    color:white;
+}
+
+.gotores{
+    color:yellow;
+}
+
+
+
+
+
+
+/****************CSS separately for Contact form*****************/
+
+
+#contact #formc{
+background: white; 
+width:500px;
+border:2px solid black;
+padding:10px 10px 10px 10px;
+margin:0 auto;
+     
+}
+
+#contact #formc input{
+   
+width:100%;
+border-radius:5px ;
+height:20px;
+background: #d6d6d6;
+     
+}
+
+#contact #formc #messagec{
+    
+    width: 100%;
+    border-radius: 5px;
+    background: #d6d6d6;
+}
+
+#contact #formc #submit{
+    background:rgb(59, 118, 1)
+}
+
+
+
+/************CSS separately for Cooking tips****************/
+.tipstart{
+    text-align: center;
+    font-size: 30px;
+    color:crimson;
+}
+
+ul{
+    color:black;
+    font-weight: 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.tiptitle{
+    font-size: 22px;
+    color:darkmagenta;
+}
+
+
+
+
+
+
+/*********************CSS separately for takedel Final delivery form********************/
+#finaldelivery #formd{
+top:260px;
+left:650px;
+position: absolute;
+visibility: visible;
+background:palegoldenrod; 
+width:700px;
+border:2px solid black;
+padding:10px 10px 10px 10px;
+margin:0 auto;
+
+     
+}
+
+#finaldelivery #formd input{
+   
+width:50%;
+border-radius:5px ;
+height:20px;
+background: white;
+     
+}
+
+#finaldelivery #formd input[type=radio]{
+/*border-radius:5px ;
+height:20px;*/
+background: white;
+     
+}
+
+.mealspic{
+    height: 100%;
+    width: 300px;
+    margin-right: 800px;
+}
+
+#finaldelivery #formd #address{
+    
+    width: 60%;
+    border-radius: 5px;
+    background:white;
+}
+
+#finaldelivery #formd #submit{
+    background:pink;
+}
+ 
+.typelunch{
+    font-size: 16px;
+    color:black;
+}
+/**************CSS for recipe magazine****************/
+
+.dropdown{
+    position: fixed;
+    float:left;
+    width:120px;
+    height:100px;
+    padding: -20px 0 10px 15px;
+    margin-top: -35px;
+    
+    
+}
+.dropdown ul{
+    list-style: none;
+    font-size: 20px;
+    margin-top: 5px;    
+    
+}
+
+.dropdown ul li{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    
+   
+}
+.dropdown ul li a{
+    display: block;
+  color:black;
+    
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  float: left;
+   
+
+}
+.dropdown ul li a:hover{
+    background-color: lightslategray;
+    border: dashed 1px black;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+}
+.recipecontent{
+width: 800px;
+margin-left: 300px;
+}
+
+.jots{
+    font-size: 15px;
+    font-weight:600;
+}
+
+.classheading{
+    font-size:35px;
+    color: chartreuse;
+    position: fixed;
+}
+.recipelist {
+    font-size:  20px;
+    color:darkslateblue;
+    text-decoration: none;
+    position: fixed;
+}
+.topref {
+    font-size:  18px;
+    color:darkslateblue;
+    text-decoration: none;
+}
+
+
+/***************CSS separately for basic cooking videos*************/
+.maincv{
+    margin: 0 0 0 180px;
+    text-align: center;
+    padding: 35px 40px 30px 0;
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 13px;
+    line-height: 18px;
+    text-emphasis:justify;
+}
+
+.maincv a:hover{
+    color: #444444;
+}
+
+.videotit{
+    font-size: 28px;
+    font-family: "Georgia";
+    color: darkmagenta;
+}
+
+.maintit{
+    font-size: 30px;
+    color: crimson;
+}
